@@ -33,7 +33,9 @@ class VideoToSRTBot:
     def __init__(self, token: str):
         self.token = token
         self.upload_folder = 'uploads'
+        self.output_folder = 'outputs' # បន្ថែមជួរនេះ
         os.makedirs(self.upload_folder, exist_ok=True)
+        os.makedirs(self.output_folder, exist_ok=True) # បន្ថែមជួរនេះ
         os.makedirs('outputs', exist_ok=True)
         # Allowed file extensions
         self.allowed_extensions = {
@@ -380,3 +382,4 @@ if __name__ == '__main__':
     bot = VideoToSRTBot(BOT_TOKEN)
 
     bot.run()
+
