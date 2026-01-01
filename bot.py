@@ -34,7 +34,7 @@ class VideoToSRTBot:
         self.token = token
         self.upload_folder = 'uploads'
         os.makedirs(self.upload_folder, exist_ok=True)
-        
+        os.makedirs('outputs', exist_ok=True)
         # Allowed file extensions
         self.allowed_extensions = {
             'mp4', 'avi', 'mov', 'mkv', 'wmv', 
@@ -378,4 +378,5 @@ if __name__ == '__main__':
     BOT_TOKEN = "7638697613:AAHweT61kMgupTD3flLheNLx-DbkEDj5mtk"  # Replace with your bot token
     
     bot = VideoToSRTBot(BOT_TOKEN)
+
     bot.run()
