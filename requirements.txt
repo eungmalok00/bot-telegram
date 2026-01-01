@@ -1,7 +1,6 @@
-flask==2.3.3
+python-telegram-bot==20.3
 openai-whisper==20231117
-werkzeug==2.3.7
+flask==2.3.3
 gunicorn
-# ដំឡើង torch ប្រភេទ CPU ដើម្បីឱ្យស្រាល និងស៊ី RAM តិច
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
